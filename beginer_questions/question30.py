@@ -1,0 +1,32 @@
+# 30. Simple Calculator
+
+# Question: Create a program that performs addition, subtraction, multiplication, and division based on the user's choice.
+
+# Answer:
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+
+choice = input("Enter your choice: ")
+
+
+if choice == "1":
+    print("Result =", a + b)
+elif choice == "2":
+    print("Result =", a - b)
+elif choice == "3":
+    print("Result =", a * b)
+elif choice == "4":
+    if b != 0:
+        print("Result =", a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid choice")
